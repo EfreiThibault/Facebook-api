@@ -1,29 +1,6 @@
-<h1 align="center">
-  Facebook API
-</h1>
+# facebook_api
+Facebook API Thibault Esnouf 
 
-## <p>Summary</a>
-
-* [Rules](#rules)
-* [Story](#story)
-* [Credits](#credits)
-
-## <a name='overview'>Rules</a>
-
-* You **MUST** create a **PUBLIC** git repository named `facebook-api`
-* You **MUST** return the project before Friday February 2022, 25 at 23:42. Add your GitHub link
-* You **MUST** create a file called `.author` with your username followed by a newline:
-```sh
-~/efrei/facebook-api ❯❯❯ cat -e .author
-{
-  firstName: "Dylan",
-  lastName: "DE SOUSA"
-}
-```
-
-## <a name='story'>Story</a>
-You have to implement a **REST API**.
-Please follow the **models** and the **requirements** carefully.
 
 ## Prisma Models
 
@@ -87,7 +64,7 @@ model Post {
 | `GET`    | `/:id/posts`   | `Authorization: TOKEN` | `null`          | `{ posts: Post[] }`    | return a list of User's posts. |
 | `GET`    | `/:id/profile` | `Authorization: TOKEN` | `null`          | `{ profile: Profile }` | return a User's profile.       |
 | `PATCH`  | `/:id/profile` | `Authorization: TOKEN` | `UpdateProfile` | `{ profile: Profile }` | update a User's profile.       |
-| `DELETE` | `/:id`         | `Authorization: TOKEN` | `null`          | `null`                 | delete an user by it's id.     |
+| `DELETE` | `/:id`         | `Authorization: TOKEN` | `null`          | `null`                 | update a User's profile.       |
 
 ## `/api/v1/posts`
 
@@ -105,7 +82,3 @@ model Post {
 | `GET`    | `/`      | `Authorization: TOKEN` | `null`          | `{ posts: Post[] }` | return a list of Post. |
 | `PATCH`  | `/:id`   | `Authorization: TOKEN` | `UpdatePostDto` | `{ post: Post }`    | update a Post.         |
 | `DELETE` | `/:id`   | `Authorization: TOKEN` | `null`          | `null`              | delete a Post.         |
-
-## <a name='story'>Credits</a>
-
-Craft by **Call-Me-Dev**.
